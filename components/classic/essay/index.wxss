@@ -1,0 +1,3 @@
+/* components/classic/essay/index.wxss */
+/* 模板template */
+@import "../common.wxss";

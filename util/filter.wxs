@@ -1,0 +1,23 @@
+var format = function(text){
+  if(!text){
+    return 
+  }
+  // console.log(text)
+  // wxs
+  var reg = getRegExp('\\\\n','g')
+  return text.replace(reg,'\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+
+}
+
+var limit = function(array,length){
+  return array.slice(0,length)
+}
+
+// 独立的模特 不跟es6模块一样
+// wxs和javascript语法一样 但不是一种语法 拥有自己运行环境
+
+
+module.exports = {
+  format:format,
+  limit: limit
+}
